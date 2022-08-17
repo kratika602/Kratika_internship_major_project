@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href=" {{ url_for('static',filename ='images/favicon.png') }} " type="image/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Poornima Institute of Engineerig and Technology</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href=" {{ url_for('static',filename ='css/bootstrap.css') }} " />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+
+  <!-- font awesome style -->
+  <link href=" {{ url_for('static',filename ='css/font-awesome.min.css') }} " rel="stylesheet" />
+  <!-- owl carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+  <!-- Custom styles for this template -->
+  <link href=" {{ url_for('static',filename ='css/style.css') }} " rel="stylesheet" />
+  <!-- responsive style -->
+  <link href=" {{ url_for('static',filename ='css/responsive.css') }} " rel="stylesheet" />
+
+  <style>
+
+    h1 {text-align: center;}
+    h2 {text-align: center;}
+    h3 {text-align: center;}
+    p {text-align: center;}
+    div {text-align: center;}
+    </style>
+
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section ">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="/">
+            <span>
+              Poornima
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item ">
+                  <a class="nav-link" href="/">Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about"> About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/internship_models">Internship Models <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/teacher">Teachers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="quote_btn-container">
+              <a href="">
+                <span>
+                  Login
+                </span>
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </a>
+              <form class="form-inline">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- decision model section -->
+
+ <div class="" style="background-color:#002B5B;" >
+  <div class="clearfix">
+             
+  <div class="col-md-12">
+  <center><p style="font-size:40px;color:white;margin-top:10px;">Poornima Institute of Engineering & Technology</p></center> 
+  <center><p style="font-size:30px;color:white;margin-top:10px;">Department of Computer Engineering</p></center> 
+  <center><p style="font-size:25px;color:white;margin-top:10px;">Summer Internship 2022 on Machine learning and Data Science</p></center> 
+  </div>
+  </div>
+  </div>
+  
+  <div class="login" style="background-color:#E7F6F2;">
+  <h2 > Churn Modelling using Support vector machine</h2>
+  <h4>Developed by Kratika Kumawat</h4>
+  
+  
+  <!-- Main Input For Receiving Query to our ML -->
+  <form action="{{ url_for('predict2')}}"method="get">
+  <div class="form-floating mb-3">
+  
+  <input type="number" class="form-control" id="exp" name="credit" step="any" min="0" max="1000" placeholder="0" required="required">
+  <label for="floatingInput">Enter credit Score </label>
+  </div>
+  <br>
+  
+  <div class="form-floating mb-3">
+  
+  <input type="number" class="form-control" id="exp" name="age" step="any" min="0" max="100" placeholder="0" required="required">
+  <label for="floatingInput">Enter Age</label>
+  </div>
+  <br>
+  
+  <div class="form-floating mb-3">
+  
+  <input type="number" class="form-control" id="exp" name="tenure" step="any" min="0" max="100" placeholder="0" required="required">
+  <label for="floatingInput">Enter Tenure</label>
+  </div>
+  <br>
+  
+  <div class="form-floating mb-3">
+  
+  <input type="number" class="form-control" id="exp" name="balance" step="any" min="0" max="300000" placeholder="0" required="required">
+  <label for="floatingInput">Enter Balance</label>
+  </div>
+  <br>
+  
+  <div class="form-floating mb-3">
+  
+  <input type="number" class="form-control" id="exp" name="products" step="any" min="0" max="10" placeholder="0" required="required">
+  <label for="floatingInput">Enter no. of Products</label>
+  </div>
+  <br>
+  
+  <div class="form-floating mb-3">
+  
+  <input type="number" class="form-control" id="exp" name="estimatedsalary" step="any" min="0" max="300000" placeholder="0" required="required">
+  <label for="floatingInput">Enter  Estimated Salary</label>
+  </div>
+  <br>
+  
+  
+  <p text-align:left;>Geography        
+    <input type="radio" id="exp" name="geography" value="1">
+    <label for="exp">France</label>
+    <input type="radio" id="exp" name="geography" value="2">
+    <label for="exp">Spain</label>
+    <input type="radio" id="exp" name="geography" value="3">
+    <label for="exp">Germany</label>
+    </p><br> 
+  
+  <p text-align:left;>Gender        
+    <input type="radio" id="exp" name="gender" value="1">
+    <label for="exp">Male</label>
+    <input type="radio" id="exp" name="gender" value="2">
+    <label for="exp">Female</label>
+    </p><br> 
+  
+  <p text-align:left;>A active member or not        
+    <input type="radio" id="exp" name="active" value="1">
+    <label for="exp">Yes</label>
+    <input type="radio" id="exp" name="active" value="2">
+    <label for="exp">No</label>
+    </p><br> 
+  
+  <p text-align:left;>Has Credit Card or not?        
+    <input type="radio" id="exp" name="creditcard" value="1">
+    <label for="exp">Yes</label>
+    <input type="radio" id="exp" name="creditcard" value="2">
+    <label for="exp">No</label>
+    </p><br> 
+  
+  <br>
+  <br>
+  <br>
+  <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+  </form>
+  <br>
+  <br>
+  {{ prediction_text }}
+  
+  </div>
+  
+  <div class="" style="background-color:#002B5B;" >
+  <div class="clearfix">
+             
+  <div class="col-md-12">
+   <center><p style="font-size:25px;color:white;margin-top:20px;">Experiment Performed in Summer internship 2022 from 27 June to 8 August </p></center> 
+  </div>
+  </div>
+  </div>
+  </body>
+  </html>
+  <!-- end teacher section -->
+
+  <!-- info section -->
+  <section class="info_section ">
+
+    <div class="container">
+      <div class="info_top ">
+        <div class="row ">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="info_detail">
+              <a href="/">
+                <h4>
+                  Poornima Institute of Engineerig and Technology
+                </h4>
+              </a>
+              <p>
+                Soluta odit exercitationem rerum aperiam eos consectetur impedit delectus qui reiciendis, distinctio, asperiores fuga labore a? Magni natus.
+              </p>
+              <div class="social_box">
+                <a href="">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 mx-auto">
+            <h4>
+              Contact us
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit
+            </p>
+            <div class="contact_nav">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Location
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call : +01 123455678990
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  Email : demo@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info_form">
+              <h4>
+                SIGN UP TO OUR NEWSLETTER
+              </h4>
+              <form action="">
+                <input type="text" placeholder="Enter Your Email" />
+                <button type="submit">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end info_section -->
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://html.design/">Kratika Kumawat</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+
+   <!-- jQery -->
+   <script src="{{ url_for('static',filename ='js/jquery-3.4.1.min.js') }}"></script>
+   <!-- bootstrap js -->
+   <script src="{{ url_for('static',filename ='js/bootstrap.js') }}"></script>
+   <!-- owl carousel -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+   <!-- custom js -->
+   <script src="{{ url_for('static',filename ='js/custom.js') }}"></script>
+   <!-- Google Map -->
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+   <!-- End Google Map -->
+
+</body>
+
+</html>
