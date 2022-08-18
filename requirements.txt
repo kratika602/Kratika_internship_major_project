@@ -31,3 +31,4 @@ Werkzeug
 yarg
 mlxtend
 nltk
+openpyxl
