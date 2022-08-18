@@ -321,4 +321,6 @@ def predict6():
         
     return render_template('naivebayes.html', prediction_text='Given Review is : {}'.format(message))
 
-app.run()
+if __name__ == "__main__":
+  app.run(debug=True)
+  
